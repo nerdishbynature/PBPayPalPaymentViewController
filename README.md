@@ -1,4 +1,4 @@
-PBPayPalViewController
+PBPayPalPaymentViewController
 ==============
 
 This is a subclass of PayPalPaymentViewController which adds the ability to use blocks instead of delegates.
