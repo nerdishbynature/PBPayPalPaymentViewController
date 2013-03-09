@@ -7,6 +7,7 @@
 //
 
 #import "PBAppDelegate.h"
+#import "PBMainViewController.h"
 
 @implementation PBAppDelegate
 
@@ -20,8 +21,13 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
+    PBMainViewController *viewController = [[PBMainViewController alloc] initWithNibName:@"PBMainViewController" bundle:nil];
+    
+    self.window.rootViewController = viewController;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    [viewController release];
     return YES;
 }
 
