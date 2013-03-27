@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PBMainViewController : UIViewController
+@interface PBMainViewController : UIViewController<UITextFieldDelegate>
+@property (retain, nonatomic) IBOutlet UITextField *email_field;
 
 @end
